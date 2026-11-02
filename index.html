@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#071a31">
+  <title>Flapstar — The Sky Is Yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game" aria-label="Flapstar game">
+    <canvas id="scene" aria-label="Game scene. Tap or press space to flap."></canvas>
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 14.5c4.2-7.4 8.5-8 15.8-5.8-3.1 1-4.9 2.8-6 5.3-2.6-.9-5.8-.7-9.8.5Z" fill="#8ff8e9"/><circle cx="15.7" cy="9.8" r=".8" fill="#15314b"/></svg></div><div><div class="brand-name">FLAPSTAR</div><div class="brand-tag">o céu é seu</div></div></div>
+      <div class="tools"><button class="icon-btn" id="soundBtn" aria-label="Toggle sound" title="Sound"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path class="sound-wave" d="M16 9a5 5 0 0 1 0 6m2.5-8.5a8.5 8.5 0 0 1 0 11"/></svg></button><button class="icon-btn" id="pauseBtn" aria-label="Pause game" title="Pause"><svg viewBox="0 0 24 24"><path d="M8 5h3v14H8zM15 5h3v14h-3z"/></svg></button></div>
+    </header>
+    <div class="scoreboard" id="scoreboard"><span class="score-label">PONTOS</span><strong id="score">0</strong><span class="best-label">RECORDE <b id="best">0</b></span></div>
+    <section class="overlay" id="overlay">
+      <div class="card" id="card">
+        <div class="eyebrow"><span class="sparkle">✦</span> UMA PEQUENA AVENTURA</div>
+        <h1 id="title">FLAP<br><em>STAR</em></h1>
+        <p id="message">Um toque. Mais uma tentativa.<br>Até onde você consegue voar?</p>
+        <div class="howto"><span class="tap-icon"><i></i></span><span><b>TOQUE PARA VOAR</b><small>Desvie dos canos. Pegue estrelas.</small></span></div>
+        <button class="play-btn" id="playBtn"><span id="playText">DECOLAR</span><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></button>
+        <div class="footnote" id="footnote">FEITO PARA A SUA BOLSA DE CÉU</div>
+      </div>
+    </section>
+    <div class="toast" id="toast"></div>
+    <div class="landscape-note">FLAPSTAR<br><small>Rotate your device for the best view</small></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
