@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#f6f2fb">
+<title>Casa da Nuvem — seu bichinho virtual</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar"><div class="brand"><div class="brand-icon">☁️</div><div>Casa da Nuvem<small>um cantinho só de vocês</small></div></div><div class="top-right"><div class="level-pill">✦ Nível <b id="level">1</b></div><div class="coin-pill"><span>●</span><b id="coins">24</b> estrelinhas</div></div></header>
+<main class="layout">
+<section class="scene-card">
+<div class="scene-head"><div><div class="eyebrow">SEU BICHINHO</div><h1>Nuvem <span class="tiny-heart">♥</span></h1><p id="mood-line">Está feliz por ter você aqui.</p></div><button class="icon-btn" id="rename" aria-label="Dar outro nome">✎</button></div>
+<div class="room" id="room"><div class="window"><div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="hill"></div></div><div class="plant"><i></i><i></i><i></i><b></b></div><div class="floor"></div><div class="rug"></div>
+<div class="pet-wrap" id="pet-wrap"><div class="pet-shadow"></div><div class="pet" id="pet" role="img" aria-label="Nuvem, seu bichinho virtual"><div class="ear left"></div><div class="ear right"></div><div class="blush left"></div><div class="blush right"></div><div class="eyes"><i></i><i></i></div><div class="mouth"></div><div class="pet-spark">✦</div></div><div class="pet-label" id="pet-label">Nuvem <span>♡</span></div></div>
+<div class="speech-bubble" id="speech-bubble">Oi! Que bom que você chegou ☺</div><div class="float-layer" id="float-layer"></div></div>
+<div class="scene-bottom"><div class="xp-row"><div class="xp-label"><span>Próximo nível</span><b id="xp-label">0 / 100 XP</b></div><div class="xp-track"><i id="xp-bar"></i></div></div><div class="needs" id="needs"></div></div>
+</section>
+<aside class="side-card"><div class="tabs"><button class="tab active" data-tab="talk">💬 Conversar</button><button class="tab" data-tab="care">🧸 Cuidar</button></div>
+<div class="panel active" id="talk-panel"><div class="panel-title"><div><h2>Fala comigo!</h2><p>O que você disser vai direto pro nosso caderninho ✨</p></div><span class="chat-icon">✧</span></div><div class="diary" id="diary"><div class="empty-diary" id="empty-diary"><div class="empty-icon">📖</div><b>Nosso caderninho</b><span>As coisas que você contar ficam guardadas aqui.</span></div></div><form class="composer" id="talk-form"><input id="talk-input" autocomplete="off" placeholder="Me conta qualquer coisa…" maxlength="180" aria-label="Diga algo para Nuvem"><button type="button" class="mic-btn" id="mic" aria-label="Falar por voz" title="Falar por voz">🎙</button><button class="send-btn" aria-label="Enviar">➤</button></form><div class="voice-note" id="voice-note">Toque no microfone e fale — eu guardo tudinho.</div><div class="quick-prompts"><button data-say="Hoje foi um dia muito legal!">“Hoje foi legal!”</button><button data-say="Estou com saudade de você">“Tô com saudade”</button></div></div>
+<div class="panel" id="care-panel"><div class="panel-title"><div><h2>Hora de cuidar</h2><p>Pequenos carinhos deixam Nuvem radiante.</p></div><span class="chat-icon">♡</span></div><div class="care-grid"><button class="care-action" data-action="feed"><span class="action-emoji">🍓</span><b>Dar lanche</b><small>+ fome · 3 ✦</small></button><button class="care-action" data-action="play"><span class="action-emoji">🪁</span><b>Brincar</b><small>+ diversão · 2 ✦</small></button><button class="care-action" data-action="clean"><span class="action-emoji">🫧</span><b>Dar banho</b><small>+ limpeza · grátis</small></button><button class="care-action" data-action="sleep"><span class="action-emoji">🌙</span><b>Sonequinha</b><small>+ energia · grátis</small></button></div><div class="care-tip"><span>💡</span><div><b>Dica de carinho</b><p>Converse com Nuvem também! Cada papo rende XP e estrelinhas.</p></div></div><button class="back-talk" data-tab="talk">← Voltar pro caderninho</button></div>
+<div class="sticker"><span>💌</span><div><b>Seu caderninho é privado</b><small>Fica salvo só neste dispositivo.</small></div><span class="lock">🔒</span></div></aside>
+</main><footer>Feito com carinho <span>♥</span> · Tudo que você contar fica guardado no seu caderninho.</footer>
+</div><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="game.js"></script>
+</body></html>
